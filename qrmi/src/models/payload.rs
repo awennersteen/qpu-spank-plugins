@@ -18,5 +18,5 @@ pub enum Payload {
     /// Payload that contains Qiskit Primitive input.
     QiskitPrimitive { input: String, program_id: String },
     /// Payload for Pasqal Cloud
-    PasqalCloud { value: String },
+    PasqalCloud { sequence: String, job_runs: i32 },
 }
